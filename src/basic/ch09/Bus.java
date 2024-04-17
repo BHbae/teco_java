@@ -25,5 +25,7 @@ public class Bus {
 		System.out.println("버스 승객수 : " + passengerCount);
 		System.out.println("버스 수익금 : " + money);
 	}
+	
+	
 
 } // end of class
