@@ -40,11 +40,29 @@ public class Person {
 	public void showInfo() {
 		System.out.println("이름 : " + name + ",나이 : " + age);
 	}
+	public String getName() {
+		return this.name;
+	}
 	
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
-	
+	public int getAge() {
+		return this.age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getphone() {
+		return this.phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getGender() {
+		return this.gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 }
