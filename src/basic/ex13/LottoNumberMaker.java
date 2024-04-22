@@ -1,5 +1,6 @@
 package basic.ex13;
 
+//가지고온다. 수입.
 import java.util.Random;
 
 public class LottoNumberMaker {

@@ -3,55 +3,78 @@ package basic.ex13;
 public class LottoGame {
 
 	public static void main(String[] args) {
-		// static 변수 --> 클래스 변수
-		int gameNUmber1 = LottoNumberMaker.makeNumber();
-		int gameNUmber2 = LottoNumberMaker.makeNumber();
-		int gameNUmber3 = LottoNumberMaker.makeNumber();
-		int gameNUmber4 = LottoNumberMaker.makeNumber();
-		int gameNUmber5 = LottoNumberMaker.makeNumber();
-		int gameNUmber6 = LottoNumberMaker.makeNumber();
+		// static 변수 --> 클래스 변수라고도 불린다.
 
-		// 전체 1~6 까지 나오 결과 갑쇼을 오름 차순으로 정렬
-		// 단, 중복값제외
+		int gameNumber1 = LottoNumberMaker.makeNumber();
+		int gameNumber2 = LottoNumberMaker.makeNumber();
+		int gameNumber3 = LottoNumberMaker.makeNumber();
+		int gameNumber4 = LottoNumberMaker.makeNumber();
+		int gameNumber5 = LottoNumberMaker.makeNumber();
+		int gameNumber6 = LottoNumberMaker.makeNumber();
 
-		// 수식을 작성하자
-		// if --> 반복문 금지 if 문 6개로 구성
+		// 전체 1 ~ 6 까지 나온 결과값을 오름 차순으로 정렬
+		// 단, 중복 값은 무시!
 
-		int temp = 0;
-		for(int i = 1; i <= 6; i++) {
-		if (gameNUmber1 > gameNUmber2) {
-			temp = gameNUmber1;
-			gameNUmber1 = gameNUmber2;
-			gameNUmber2 = temp;
+		// 수식을 작성해주세요
+		// 만약 if --> 반복문 사용 금지 if 문 6개로 구성해주세요
+		//
+		int tempBox = 0;
+		// 5, 1, 9, 7, 2, 3
+		// 5 > 1
+		if (gameNumber1 > gameNumber2) {
+			// 5
+			tempBox = gameNumber1;
+			// 1 <-- 1
+			gameNumber1 = gameNumber2;
+			// 5 <-- 5
+			gameNumber2 = tempBox;
 		}
-		if (gameNUmber2 > gameNUmber3) {
-			temp = gameNUmber2;
-			gameNUmber2 = gameNUmber3;
-			gameNUmber3 = temp;
-		}
-		if (gameNUmber3 > gameNUmber4) {
-			temp = gameNUmber3;
-			gameNUmber3 = gameNUmber4;
-			gameNUmber4 = temp;
-		}
-		if (gameNUmber4 > gameNUmber5) {
-			temp = gameNUmber4;
-			gameNUmber4 = gameNUmber5;
-			gameNUmber5 = temp;
-		}
-		if (gameNUmber5 > gameNUmber6) {
-			temp = gameNUmber5;
-			gameNUmber5 = gameNUmber6;
-			gameNUmber6 = temp;
-		}
+		// 1, 5, 9, 7, 2, 3
+		// 5 > 9
+		if (gameNumber2 > gameNumber3) {
+			tempBox = gameNumber2;
+			gameNumber2 = gameNumber3;
+			gameNumber3 = tempBox;
 		}
 
-		System.out.print(gameNUmber1 + "\t");
-		System.out.print(gameNUmber2 + "\t");
-		System.out.print(gameNUmber3 + "\t");
-		System.out.print(gameNUmber4 + "\t");
-		System.out.print(gameNUmber5 + "\t");
-		System.out.print(gameNUmber6 + "\t");
+		// 1, 5, 9, 7, 2, 3
+		// 9 > 7
+		if (gameNumber3 > gameNumber4) {
+			// 9 <-- 9
+			tempBox = gameNumber3;
+			// 7 <--- 7
+			gameNumber3 = gameNumber4;
+			// 9 <--- 9
+			gameNumber4 = tempBox;
+		}
+		// 1, 5, 7, 9, 2, 3
+		// 9 2
+		if (gameNumber4 > gameNumber5) {
+			// 9 <--- 9
+			tempBox = gameNumber4;
+			// 2 <-- 2
+			gameNumber4 = gameNumber5;
+			// 2 <-- 9
+			gameNumber5 = tempBox;
+		}
+		// 1, 5, 7, 2, 9, 3
+		// 9 > 3
+		if (gameNumber5 > gameNumber6) {
+			// 9 <-- 9
+			tempBox = gameNumber5;
+			// 3 <-- 3
+			gameNumber5 = gameNumber6;
+			// 9 <--- 9
+			gameNumber6 = tempBox;
+		}
+
+		// 1, 5, 7, 2, 3, 9
+		System.out.println(gameNumber1);
+		System.out.println(gameNumber2);
+		System.out.println(gameNumber3);
+		System.out.println(gameNumber4);
+		System.out.println(gameNumber5);
+		System.out.println(gameNumber6);
 
 	} // end of main
 

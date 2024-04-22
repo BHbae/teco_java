@@ -1,6 +1,5 @@
 package basic.ch12;
 
-import basic.ch05.book;
 
 public class Account {
 

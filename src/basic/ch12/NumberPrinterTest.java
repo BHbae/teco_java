@@ -10,11 +10,10 @@ public class NumberPrinterTest {
 		
 		
 		n1.printWaithNumber(); //고객1
-		n1.printWaithNumber(); //고객2
+		n2.printWaithNumber(); //고객2
 		n1.printWaithNumber(); //고객3
 		n1.printWaithNumber(); //고객4
-		
-		n2.printWaithNumber(); //고객 5
+		n1.printWaithNumber(); //고객 5
 		n2.printWaithNumber(); //고객 6
 	}
 

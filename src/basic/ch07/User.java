@@ -60,9 +60,9 @@ public class User {
 //		System.out.println(user2Result2 + "비밀번호가 맞습니다");
 		
 		//boolean user2Result;
-		if( user2 = user2Result ) {
+		//if( user2 = user2Result ) {
 			
-		}
+		//}
 		
 		
 		
