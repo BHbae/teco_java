@@ -120,7 +120,7 @@ public class MyBookStore {
 		System.out.println("--- 선택 조회 하기 ---");
 		System.out.println("--- 책 제목을 입력 해주세요 ---");
 		String bookTitle = sc.nextLine();
-		
+
 		boolean isFind = false;
 
 		// 사용자가 입력한 책제목
@@ -137,9 +137,9 @@ public class MyBookStore {
 				}
 
 			}
-			// 만약 선택된 값이 없다면
-			}
-		if(isFind == false) {
+		}
+		// 만약 선택된 값이 없다면
+		if (isFind == false) {
 			System.out.println("해당 제목에 책은 존재하지않습니다.");
 		}
 
