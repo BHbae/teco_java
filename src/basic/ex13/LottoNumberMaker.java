@@ -46,4 +46,4 @@ public class LottoNumberMaker {
 		return numbers;
 	}
 
-}
+} //end of class

@@ -1,7 +1,7 @@
 package basic.ch09;
 
 public class Archer {
-	
+
 	String name; // 이름
 	int attackPower;// 공격력
 	int archerHp;// 체력
@@ -9,9 +9,7 @@ public class Archer {
 	// 생성자
 	public ArcherName(String Name){
 		name = Name;
-	}
-	attackPower = Att;
-	archerHp = Hp;
+	}attackPower=Att;archerHp=Hp;
 
 	// 체력
 	public void beAttacked(int hp) {
