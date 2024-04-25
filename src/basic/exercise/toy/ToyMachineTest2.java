@@ -43,7 +43,7 @@ public class ToyMachineTest2 {
 		int[] ran = makeNumbers();
 		for(int i = 0; i < ran.length; i++) {
 			System.out.println("도전");
-			if()
+			
 		}
 		
 	} // end of main

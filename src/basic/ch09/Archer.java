@@ -7,7 +7,7 @@ public class Archer {
 	int archerHp;// 체력
 
 	// 생성자
-	public ArcherName(String Name){
+	public void ArcherName(String Name){
 		name = Name;
 	}attackPower=Att;archerHp=Hp;
 

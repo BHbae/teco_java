@@ -8,7 +8,7 @@ public class Fight {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		Archer a1 = new Archer("성후", 100, 500);
+		Archer a1 = new Archer();
 		boolean flag = true;
 		int choice;
 		choice = sc.nextInt();
