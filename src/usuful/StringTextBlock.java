@@ -3,6 +3,9 @@ package usuful;
 public class StringTextBlock {
 
 	public static void main(String[] args) {
+		
+		// html, json 문자열을 만드는데 유용하게 사용할 수 있음
+		
 		// """ 찍고 한줄 내리기
 		String strBlock = """
 				 this
@@ -63,7 +66,6 @@ public class StringTextBlock {
 
 								""";
 
-		// html, json 문자열을 만드는데 유용하게 사용할 수 있음
 	}
 
 }
