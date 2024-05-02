@@ -14,7 +14,8 @@ public class BankAccont {
 
 	// 입금
 	public synchronized void saveMoney(int money) {
-
+                                 
+		
 		int currenMoney = getMoney();
 
 		// 시간이 걸림
