@@ -3,7 +3,7 @@ package structure;
 public class MainTest1 {
 	
 	public static void main(String[] args) {
-		TenacoIntArray tenacoIntArray = new TenacoIntArray();
+		TencoIntArray tenacoIntArray = new TencoIntArray();
 		tenacoIntArray.addElement(100);
 		tenacoIntArray.addElement(200);
 		tenacoIntArray.addElement(300);

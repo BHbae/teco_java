@@ -4,21 +4,21 @@ package structure;
  * 배열을 활용 클래스를 설계 물론 --> 이미 자바 표준API개발자들이 잘만들어 준 클래스 들이 존재 한다. 하지만 직접 기능을 확장해서
  * 만들어 보자.
  */
-public class TenacoIntArray {
+public class TencoIntArray {
 
 	int[] intArr;
 	int count; // 배열안에 들어간 요소의 갯수 관리
 	public final int ARRAY_SIZE;
 	public static final int ERROR_NUM = -99999999;
 
-	public TenacoIntArray() {
+	public TencoIntArray() {
 
 		count = 0;
 		ARRAY_SIZE = 10;
 		intArr = new int[ARRAY_SIZE];
 	}
 
-	public TenacoIntArray(int size) {
+	public TencoIntArray(int size) {
 		count = 0;
 		ARRAY_SIZE = size;
 		intArr = new int[ARRAY_SIZE];
@@ -121,7 +121,8 @@ public class TenacoIntArray {
 		// intArr[positon]; --> 사용자가 요청한 인덱스번호는 0 번이라고 가정
 		// [100] [200] [300] [400]
 		// [200] [300] [400]
-		for (int i = positon; i < count - 1; i--) {
+		for (int i = positon; i < count; i++ ){
+			
 			intArr[i] = intArr[i + 1];
 		}
 		count--;
