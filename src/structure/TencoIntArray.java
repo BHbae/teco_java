@@ -121,8 +121,8 @@ public class TencoIntArray {
 		// intArr[positon]; --> 사용자가 요청한 인덱스번호는 0 번이라고 가정
 		// [100] [200] [300] [400]
 		// [200] [300] [400]
-		for (int i = positon; i < count; i++ ){
-			
+		for (int i = positon; i < count; i++) {
+
 			intArr[i] = intArr[i + 1];
 		}
 		count--;
